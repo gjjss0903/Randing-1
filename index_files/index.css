@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: rgb(52, 51, 54);
+}
+#wrap {
+  width: 818px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.header-img {
+  width: 818px;
+  display: flex;
+}
+section {
+  width: 100%;
+}
+/* -- 데이터베이스 입력란 -- */
+.db-all {
+  position: relative;
+  margin-left: -150px;
+}
+.db form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10px;
+  background-color: #25BDD4;
+  padding: 30px;
+}
+.db-top img,
+.db-bottom img{
+  width: 150px;
+  vertical-align: middle;
+}
+.db-top input,
+.db-bottom input {
+  width: 150px;
+  height: 50px;
+  outline: none;
+  border: none;
+  font-size: 24px;
+}
+.db-bottom input {
+  width: 465px;
+}
+.ck-img {
+  width: 150px;
+  position: absolute;
+  top: 7px;
+  left: calc(100% + 10px);
+  cursor: pointer;
+}
+.custom {
+  margin-top: 20px;
+  text-align: center;
+}
+.custom input[type=checkbox]{
+  display: none;
+}
+.custom label {
+  cursor: pointer;
+}
+.custom label em {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../images/checkbox-03.png) no-repeat;
+  margin-right: 5px;
+  background-position: left center;
+}
+.custom input[type=checkbox]:checked + label em {
+  background-position: right center;
+}
+.account {
+  font-weight: bold;
+  cursor: pointer;
+}
+.account-click {
+  padding: 30px;
+  background-color: #fff;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-top: 40px;
+  position: relative;
+  display: none;
+}
+.modal {
+  padding: 2px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: #ddd;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+/* section img */
+section img {
+  width: 818px;
+  margin-top: -4px;
+}
+.personal {
+  position: absolute;
+  width: 100%;
+  top: -50%;
+  left: 0;
+  background-color: #fff;
+  padding: 20px;
+  display: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.473);
+}
+
+.btn-x {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+@media (max-width:400px) {
+  #wrap {
+    width: 100%;
+    margin: auto;
+  }
+  .header-img {
+    width: 100%;
+  }
+  section img {
+    display: flex;
+    width: 100%;
+  }
+  .db-top {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 140px;
+    position: relative;
+  }
+  .db-top img:nth-of-type(1),
+  .db-top img:nth-of-type(2) {
+    width: 20%;
+  }
+  .db-top img:nth-of-type(3) {
+    width: 20%;
+    position: absolute;
+  }
+  .db-top input {
+    width: 80px;
+    height: 20px;
+    font-size: 15px;
+  }
+  .db-bottom {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 140px;
+  }
+  .db-bottom img {
+    width: 20%;
+  }
+  .db-bottom input {
+    width: 220px;
+    height: 20px;
+    font-size: 15px;
+  }
+  .custom {
+    font-size: 13px;
+  }
+  .account-click {
+    font-size: 12px;
+    position: relative;
+  }
+  .personal {
+    position: absolute;
+    top: -300px;
+  }
+}
